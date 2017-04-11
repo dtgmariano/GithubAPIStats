@@ -1,0 +1,36 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function foo(response) {
+  var meta = response.meta;
+  var data = response.data;
+  console.log(meta);
+  console.log(data);
+}
+
+function info(source)
+{
+  this.name = source.name;
+  this.id = source.id;
+  this.fork = source.forks_count;
+  this.watch = source.subscribers_count;
+  this.created_at =  source.created_at;
+  this.updated_at =  source.updated_at;
+  this.stargazers = source.stargazers_count;
+  //console.log(name + " " + stargazers);
+}
+
+
+var script = document.createElement('script');
+//script.src = 'https://api.github.com/repos/twbs/bootstrap?callback=foo';
+script.src = 'https://api.github.com/repositories?callback=foo';
+document.getElementsByTagName('head')[0].appendChild(script);
+
+</script>
+</head>
+
+<body>
+  <p>Open up your browser's console.</p>
+</body>
+</html>
