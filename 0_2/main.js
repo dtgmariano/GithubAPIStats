@@ -1,23 +1,60 @@
-function info(source)
+repos = [{"repo":"agrublev/52framework"},
+{"repo":"alsacreations/KNACSS"},
+{"repo":"antpaw/xCSS"},
+{"repo":"azendal/elastic"},
+{"repo":"bauhouse/fluid960gs"},
+{"repo":"brunch/brunchx"},
+{"repo":"cbrauckmuller/helium"},
+{"repo":"dhg/Skeleton"},
+{"repo":"gbabula/G5Framework"},
+{"repo":"h5bp/html5-boilerplate"},
+{"repo":"heygrady/compass-grid-plugin"},
+{"repo":"italolelis/EasyFramework"},
+{"repo":"jesucarr/FEM-CSS-Framework"},
+{"repo":"jonikorpi/Less-Framework"},
+{"repo":"joshuagatcke/HTML-KickStart"},
+{"repo":"juanghurtado/flaminwork"},
+{"repo":"mikecrittenden/bluetrip"},
+{"repo":"nathansmith/960-Grid-System"},
+{"repo":"Semantic-Org/Semantic-UI"},
+{"repo":"twbs/bootstrap"},
+{"repo":"uikit/uikit"},
+{"repo":"yamlcss/yaml"},
+{"repo":"yui/yui3"},
+{"repo":"zurb/foundation-sites"},
+{"repo":"joshuaclayton/blueprint-css"},
+{"repo":"groundworkcss/groundwork"},
+{"repo":"GumbyFramework/Gumby"}
+];
+
+function myData(source)
 {
-  this.meta = source.meta;
-  this.data = source.data;
-  /*this.name = source.name;
   this.id = source.id;
-  this.fork = source.forks_count;
-  this.watch = source.subscribers_count;
-  this.created_at =  source.created_at;
-  this.updated_at =  source.updated_at;
-  this.stargazers = source.stargazers_count;*/
+  //this.fullname = source.fullname;
+  this.name = source.name;
+  //this.url = source.url;
+
+  this.created_at = source.created_at;
+  this.updated_at = source.updated_at;
+
+  this.subscribers = source.subscribers_count;
+  this.forks = source.forks_count;
+  this.stars = source.stargazers_count;
+
+  this.description = source.description;
 }
 
-function foo(response) {
+counter = 0;
+storage = [];
+
+function foo(response)
+{
   var meta = response.meta;
   var data = response.data;
-  var i = new info(response);
-  //console.log(i.name + "\t" + i.stargazers);
-  //console.log(meta);
-  console.log(data);
+
+  var md = new myData(data);
+  storage.push(md);
+  console.log(md.id + "\t" + md.name + "\t" + md.created_at + "\t" + md.updated_at + "\t" + md.subscribers + "\t" + md.forks + "\t" + md.stars + "\t" + md.description);
 }
 
 function retrieve2GitHubAPI(source)
@@ -27,7 +64,30 @@ function retrieve2GitHubAPI(source)
   document.getElementsByTagName('head')[0].appendChild(script);
 }
 
+function retrieveDummy(source)
+{
+  storage.push(source.repo);
+}
 
-var repos = [];
+var saveData = (function () {
+    var a = document.createElement("a");
+    document.body.appendChild(a);
+    a.style = "display: none";
+    return function (data, fileName) {
+        var json = JSON.stringify(data),
+            blob = new Blob([json], {type: "octet/stream"}),
+            url = window.URL.createObjectURL(blob);
+        a.href = url;
+        a.download = fileName;
+        a.click();
+        window.URL.revokeObjectURL(url);
+    };
+}());
 
-repos.forEach(retrieve2GitHubAPI);
+function dotask()
+{
+  repos.forEach(retrieve2GitHubAPI);
+  //retrieve2GitHubAPI(repos[0]);
+}
+
+dotask();
