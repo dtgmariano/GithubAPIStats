@@ -27,6 +27,8 @@ repos = [{"repo":"agrublev/52framework"},
 {"repo":"GumbyFramework/Gumby"}
 ];
 
+pushUrl = [];
+
 function myData(source)
 {
   this.id = source.id;
@@ -51,17 +53,30 @@ function foo(response)
 {
   var meta = response.meta;
   var data = response.data;
-
+  console.log(data);
   var md = new myData(data);
   storage.push(md);
-  console.log(md.id + "\t" + md.name + "\t" + md.created_at + "\t" + md.updated_at + "\t" + md.subscribers + "\t" + md.forks + "\t" + md.stars + "\t" + md.description);
+  /*console.log(md.id + "\t" + md.name + "\t" + md.created_at + "\t" + md.updated_at + "\t" + md.subscribers + "\t" + md.forks + "\t" + md.stars + "\t" + md.description);*/
 }
 
-function retrieve2GitHubAPI(source)
+function foo2(response)
+{
+    var data2 = response;
+    console.log(data2);
+}
+
+function retrieveRepo2GitHubAPI(source)
 {
   var script = document.createElement('script');
   script.src = 'https://api.github.com/repos/'+ source.repo +'?callback=foo';
   document.getElementsByTagName('head')[0].appendChild(script);
+}
+
+function retrievePulls2GitHubAPI(source)
+{
+  var script2 = document.createElement('script2');
+  script2.src = source +'?callback=foo';
+  document.getElementsByTagName('head')[0].appendChild(script2);
 }
 
 function retrieveDummy(source)
@@ -86,7 +101,7 @@ var saveData = (function () {
 
 function dotask()
 {
-  repos.forEach(retrieve2GitHubAPI);
+  repos.forEach(retrieveRepo2GitHubAPI);
   //retrieve2GitHubAPI(repos[0]);
 }
 

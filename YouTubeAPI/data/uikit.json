@@ -1,0 +1,177 @@
+{
+ "kind": "youtube#searchListResponse",
+ "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/0x3kSSbwSB5pjOZor9I7bLb5EuM\"",
+ "nextPageToken": "CAUQAA",
+ "regionCode": "NL",
+ "pageInfo": {
+  "totalResults": 7801,
+  "resultsPerPage": 5
+ },
+ "items": [
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/mYBQrYLd_L1D-nu33VgHLkU13Mk\"",
+   "id": {
+    "kind": "youtube#playlist",
+    "playlistId": "PL2SfpsC7cy0gv9O7nNKyQZBrFjhi3LH-V"
+   },
+   "snippet": {
+    "publishedAt": "2015-03-20T16:16:08.000Z",
+    "channelId": "UCh7LfE6p40D_V-rrXSjkHRA",
+    "title": "The UIkit frontend framework",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/JxplDTY65oY/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/JxplDTY65oY/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/JxplDTY65oY/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Florian Letsch",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/t52yaqzx6VyFmYAjMzBq-xbHOQ4\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "JxplDTY65oY"
+   },
+   "snippet": {
+    "publishedAt": "2015-03-21T22:29:39.000Z",
+    "channelId": "UCh7LfE6p40D_V-rrXSjkHRA",
+    "title": "UIkit web framework #1: Overview and Introduction",
+    "description": "Introduction to the UIkit frontend framework for web development. This is an unofficial video series explaining how to use UIkit to build websites and webapps.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/JxplDTY65oY/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/JxplDTY65oY/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/JxplDTY65oY/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Florian Letsch",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/cPxPxbu0AUh5hvKKBXDQ_EjZAIg\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "qe5a4iNf-Zk"
+   },
+   "snippet": {
+    "publishedAt": "2016-11-09T07:32:19.000Z",
+    "channelId": "UCGuhp4lpQvK94ZC5kuOZbjA",
+    "title": "Введение в UIkit framework. Часть 1",
+    "description": "Премиум уроки по созданию сайта тут: https://webformyself.com/category/premium/ В данном уроке мы с Вами поговорим о UIkit framework,...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/qe5a4iNf-Zk/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/qe5a4iNf-Zk/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/qe5a4iNf-Zk/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Как создать сайт. Основы Самостоятельного Сайтостроения",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/zY3rIc14ZaEQ547NoqIvpLJ9Gfo\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "DFsENma-PAk"
+   },
+   "snippet": {
+    "publishedAt": "2014-02-01T20:33:34.000Z",
+    "channelId": "UCpt0gnJrZAo628YoobHWD2w",
+    "title": "Intro to UIKit",
+    "description": "Introduces the UIKit framework which is the primary API for building iOS apps.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/DFsENma-PAk/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/DFsENma-PAk/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/DFsENma-PAk/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Cocoa Touch Netcast",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/bJul5SrInpHU0Yd2GPUTbAkKjq0\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "ZKzeIzHcld0"
+   },
+   "snippet": {
+    "publishedAt": "2016-05-13T07:36:29.000Z",
+    "channelId": "UCdhV8d9wLRI1WUB4pnV0Row",
+    "title": "Create Website and Design Template Using Uikit",
+    "description": "how to create website or design template web using uikit.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/ZKzeIzHcld0/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/ZKzeIzHcld0/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/ZKzeIzHcld0/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Code Tube",
+    "liveBroadcastContent": "none"
+   }
+  }
+ ]
+}
